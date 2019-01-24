@@ -38,7 +38,7 @@ def factors(x):
 
 for num in triangles():
         z=factors(num)
-        print(z,num)
+        # print(z,num)
         if len(z)>500:
                 print(num)
                 break
