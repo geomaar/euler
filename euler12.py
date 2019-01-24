@@ -22,7 +22,6 @@ triangle = [1]
 for x in range(1,1000):
     triangle.append(triangle[x-1]+ (x+1)) 
 
-print(len(triangle))
 
 factor = []
 for y in range (1,29):
