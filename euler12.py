@@ -19,13 +19,21 @@ What is the value of the first triangle number to have over five hundred divisor
 """
 
 triangle = [1]
-for x in range(1,1000):
+for x in range(1,1000000):
     triangle.append(triangle[x-1]+ (x+1)) 
+    
 
+def triangle_factor(x):
+        factor = []
+        for y in range (1,triangle[x]+1):
+                if triangle[x]%y==0:
+                        factor.append(y)
+                    
+        return factor
 
-factor = []
-for y in range (1,29):
-    if triangle[5]%y==0:
-        factor.append(y)
+for index in range(0,len(triangle)):
+        factor = triangle_factor(index)
+        if len(factor)>500:
+                print(triangle[index])
+                break
 
-print(factor)
