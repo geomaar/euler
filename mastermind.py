@@ -1,6 +1,6 @@
 """ 
 Mastermind quarantine edition
-Four colors: red, yellow, blue, white in a random order
+Four letters: a, b, c, d in a random order
 User should find correct combination in 10 tries
 After each try, user will get: X correct X wrong
 """
